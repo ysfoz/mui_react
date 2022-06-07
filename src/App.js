@@ -7,7 +7,7 @@ import { Box,  Stack } from "@mui/material";
 function App() {
   return (
  <Box>
-   {/* <NavBar/> */}
+   <Navbar/>
    <Stack direction={"row"} spacing={3}>
      <Sidebar/>
      <Feed/>
