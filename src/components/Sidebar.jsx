@@ -11,7 +11,7 @@ import {
   Shop,
 } from "@mui/icons-material";
 
-const Sidebar = () => {
+const Sidebar = ({mode,setMode}) => {
   return (
     <Box
       
@@ -27,7 +27,7 @@ const Sidebar = () => {
         <ListItemComponent primary="Friends" icon={<Person />} />
         <ListItemComponent primary="Settings" icon={<Settings />} />
         <ListItemComponent primary="Profile" icon={<AccountCircle />} />
-        <ListItemComponent primary="Home" icon={<NightlightRound />} switch />
+        <ListItemComponent primary="Home" icon={<NightlightRound />} switch mode={mode} setMode={setMode}/>
       </Box>
     </Box>
   );

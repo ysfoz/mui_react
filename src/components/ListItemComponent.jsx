@@ -11,7 +11,7 @@ import {
 const ListItemComponent = (props) => {
   return (
     <List>
-      <ListItem disablePadding>
+      <ListItem disablePadding onChange={e => props.setMode(props.mode === "dark" ? "light" : "dark")}>
         <ListItemButton component="a" href="#simple-list">
           <ListItemIcon>{props.icon}</ListItemIcon>
           {props.switch ? <Switch/> : <ListItemText primary={props.primary} />}
