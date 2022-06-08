@@ -60,14 +60,14 @@ const Navbar = () => {
           <Avatar
             sx={{ height: 30, width: 30 }}
             src="https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100280/33645487-profilsymbol-m%C3%A4nnlichen-avatar-portr%C3%A4t-casual-person.jpg"
-            onClick={e=>setOpen(true)}
+            onClick={(e) => setOpen(true)}
           />
         </Icon>
         <UserBox>
           <Avatar
             sx={{ height: 30, width: 30 }}
             src="https://previews.123rf.com/images/gmast3r/gmast3r1411/gmast3r141100280/33645487-profilsymbol-m%C3%A4nnlichen-avatar-portr%C3%A4t-casual-person.jpg"
-            onClick={e=>setOpen(true)}
+            onClick={(e) => setOpen(true)}
           />
           <Typography>Ysf</Typography>
         </UserBox>
@@ -77,7 +77,7 @@ const Navbar = () => {
           aria-labelledby="demo-positioned-button"
           anchorEl={null}
           open={open}
-          onClose={e=>setOpen(false)}
+          onClose={(e) => setOpen(false)}
           anchorOrigin={{
             vertical: "right",
             horizontal: "right",

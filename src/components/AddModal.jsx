@@ -16,7 +16,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
+
 
 const AddModal = (props) => {
   const UserBox = styled(Box)({
@@ -29,7 +29,13 @@ const AddModal = (props) => {
       onClose={(e) => props.onClose(false)}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
-      sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        width: { xs: "90%" },
+        margin: { xs: "auto auto" },
+      }}
     >
       <Box width={400} height={270} bgcolor="white" borderRadius={7} p={3}>
         <Typography variant="h6" textAlign={"center"} color="gray">
@@ -48,7 +54,7 @@ const AddModal = (props) => {
           placeholder="What's your mind ?"
           variant="standard"
         />
-        <Stack direction={"row"} mt={2} mb={2}gap={1}>
+        <Stack direction={"row"} mt={2} mb={2} gap={1}>
           <EmojiEmotions sx={{ color: "#ffd600" }} />
           <Image color="success" />
           <VideoCameraBack color="error" />
@@ -58,10 +64,11 @@ const AddModal = (props) => {
           variant="contained"
           aria-label="outlined primary button group"
           fullWidth
-
         >
           <Button>Post</Button>
-          <Button sx={{width:100}}><CalendarMonth/></Button>
+          <Button sx={{ width: 100 }}>
+            <CalendarMonth />
+          </Button>
         </ButtonGroup>
       </Box>
     </Modal>
